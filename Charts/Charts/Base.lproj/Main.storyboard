@@ -16,25 +16,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtU-Vn-SRH">
-                                <rect key="frame" x="70" y="159" width="274" height="219"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="70" y="74" width="274" height="219"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wtU-Vn-SRH" secondAttribute="height" multiplier="274:219" id="Sbm-QC-l1v"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOt-mO-4aJ">
-                                <rect key="frame" x="70" y="441" width="274" height="219"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="70" y="308" width="274" height="219"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzA-Of-NpG">
+                                <rect key="frame" x="70" y="542" width="274" height="219"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="dzA-Of-NpG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2bE-mW-sa7"/>
+                            <constraint firstItem="dzA-Of-NpG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.661836" id="KhA-SP-LIE"/>
                             <constraint firstItem="wtU-Vn-SRH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.661836" id="PMW-ZK-dET"/>
                             <constraint firstItem="IOt-mO-4aJ" firstAttribute="width" secondItem="IOt-mO-4aJ" secondAttribute="height" multiplier="274:219" id="RUy-B7-jmD"/>
                             <constraint firstItem="IOt-mO-4aJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UgP-pm-sYo"/>
-                            <constraint firstItem="wtU-Vn-SRH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="ZtQ-YX-VmW"/>
-                            <constraint firstItem="IOt-mO-4aJ" firstAttribute="top" secondItem="wtU-Vn-SRH" secondAttribute="bottom" constant="63" id="cyc-hq-ZU4"/>
+                            <constraint firstItem="dzA-Of-NpG" firstAttribute="width" secondItem="dzA-Of-NpG" secondAttribute="height" multiplier="274:219" id="aAS-Th-I7O"/>
+                            <constraint firstItem="IOt-mO-4aJ" firstAttribute="top" secondItem="wtU-Vn-SRH" secondAttribute="bottom" constant="15" id="cyc-hq-ZU4"/>
+                            <constraint firstItem="dzA-Of-NpG" firstAttribute="top" secondItem="IOt-mO-4aJ" secondAttribute="bottom" constant="15" id="h7W-AD-y4p"/>
                             <constraint firstItem="wtU-Vn-SRH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kzL-Lc-Ht7"/>
+                            <constraint firstItem="wtU-Vn-SRH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="pzW-Or-tEk"/>
                             <constraint firstItem="IOt-mO-4aJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.661836" id="ysO-Vs-Y8s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,6 +50,7 @@
                     <connections>
                         <outlet property="view1" destination="wtU-Vn-SRH" id="3hj-fr-7jK"/>
                         <outlet property="view2" destination="IOt-mO-4aJ" id="tdr-g1-WC0"/>
+                        <outlet property="view3" destination="dzA-Of-NpG" id="Qn0-by-Ph2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
