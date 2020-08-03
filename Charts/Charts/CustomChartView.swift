@@ -175,11 +175,11 @@ class BarGraphView: UIView {
     var colors: [UIColor] = []
     var animated: Bool!
   
+    var currentX: CGFloat = 0
     var graphPath: UIBezierPath!
     var zeroPath: UIBezierPath!
-  
-    let graphLayer = CAShapeLayer()
-  
+    var graphLayer: CAShapeLayer!
+    
     init(frame: CGRect, values: [CGFloat], colors: [UIColor], animated: Bool) {
         super.init(frame: frame)
         self.values = values
@@ -195,23 +195,23 @@ class BarGraphView: UIView {
         super.draw(rect)
 
         //Bar차트 그래프 그리기
-        
-        var currentX: CGFloat = 0
+        let xOffset: CGFloat = (self.frame.width / CGFloat(values.count)) - self.frame.width / 13
         
         for i in 0..<values.count {
+
+            self.graphLayer = CAShapeLayer()
             self.graphPath = UIBezierPath()
             self.zeroPath = UIBezierPath()
             
             self.layer.addSublayer(graphLayer)
-            graphLayer.lineWidth = 20
+            graphLayer.lineWidth = self.frame.width / 13
             
-            let xOffset: CGFloat = self.frame.width / CGFloat(values.count)
+            currentX += xOffset
             
-            let startPosition = CGPoint(x:xOffset, y: self.frame.height)
+            let startPosition = CGPoint(x:currentX, y: self.frame.height)
             self.graphPath.move(to: startPosition)
             self.zeroPath.move(to: startPosition)
             
-            currentX += xOffset
             let newPosition = CGPoint(x: currentX, y: self.frame.height - self.values[i])
             self.graphPath.addLine(to: newPosition)
             self.zeroPath.addLine(to: CGPoint(x: currentX, y: self.frame.height))
