@@ -14,6 +14,8 @@
 		4CAF18A424D7C58F00C42163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF18A324D7C58F00C42163 /* Assets.xcassets */; };
 		4CAF18A724D7C58F00C42163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CAF18A524D7C58F00C42163 /* LaunchScreen.storyboard */; };
 		4CAF18AF24D7C5B300C42163 /* CustomChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF18AE24D7C5B300C42163 /* CustomChartView.swift */; };
+		4CB7A43C24DA7DE000B6C22A /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7A43B24DA7DE000B6C22A /* BarChartView.swift */; };
+		4CB7A43E24DA7E1700B6C22A /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7A43D24DA7E1700B6C22A /* LineChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4CAF18A624D7C58F00C42163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CAF18A824D7C58F00C42163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CAF18AE24D7C5B300C42163 /* CustomChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChartView.swift; sourceTree = "<group>"; };
+		4CB7A43B24DA7DE000B6C22A /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		4CB7A43D24DA7E1700B6C22A /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				4CAF18A524D7C58F00C42163 /* LaunchScreen.storyboard */,
 				4CAF18A824D7C58F00C42163 /* Info.plist */,
 				4CAF18AE24D7C5B300C42163 /* CustomChartView.swift */,
+				4CB7A43B24DA7DE000B6C22A /* BarChartView.swift */,
+				4CB7A43D24DA7E1700B6C22A /* LineChartView.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			files = (
 				4CAF189F24D7C58C00C42163 /* ViewController.swift in Sources */,
 				4CAF189B24D7C58C00C42163 /* AppDelegate.swift in Sources */,
+				4CB7A43C24DA7DE000B6C22A /* BarChartView.swift in Sources */,
 				4CAF18AF24D7C5B300C42163 /* CustomChartView.swift in Sources */,
 				4CAF189D24D7C58C00C42163 /* SceneDelegate.swift in Sources */,
+				4CB7A43E24DA7E1700B6C22A /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
